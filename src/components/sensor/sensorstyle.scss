@@ -1,0 +1,77 @@
+.sensor{
+    width: 92%;
+    height: 225px;
+    margin: 15px;
+    border-radius: 10px;
+    border: 2px solid gray;
+    .title , .status{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin-top: 10px;
+        margin-right: 10px;
+        p{
+            font-size: 17px;
+            margin-right: 12px;
+        }
+    }
+    .title{
+        justify-content: center;
+    }
+    .status-power{
+        .power{
+            margin-left: 10px;
+        }
+    }
+    .report{
+        .message{
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            margin-top: 10px;
+            margin-right: 10px;
+            p{
+                font-size: 17px;
+                margin-right: 12px;
+                
+            }
+        }
+        .report-icon{
+            display: flex;
+            justify-content: flex-start;
+            cursor: pointer;
+            margin-left: 10px;
+            align-items: center;
+            &:hover{
+                p{
+                    text-decoration: underline;
+                }
+                .icon{
+                    transform: scale(1.3);
+                }
+            }
+            p{
+                margin-left: 10px;
+                color: #1a8cff;
+            }
+            .icon{
+                transition: all 0.5s;
+                color: #1a8cff;
+            }
+        }
+    }
+}
+
+.danger {
+    border-color: #ff9999;
+}
+.normal{
+    border-color: 	 #99ff99    ;
+    
+}
+.sensor-text-danger {
+    color: #ff1a1a;
+}
+.sensor-text-normal {
+    color: #66ff66;
+}

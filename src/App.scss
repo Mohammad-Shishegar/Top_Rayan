@@ -1,0 +1,41 @@
+@font-face {
+  font-family: "sans";
+  src: url(./assets/fonts/IRANSansMobile.ttf);
+}
+
+
+*{
+  margin: 0;
+  font-family: "sans";
+  padding: 0;
+}
+
+
+.app{
+  display: flex;
+  flex-direction: row;
+  min-height: 100vh;
+  transition: all 0.5s;
+}
+
+.app-light{
+    *{
+      background-color: #fff;
+    }
+}
+
+.app-dark{
+    *{
+      background-color: #404040;
+    }
+}
+.app-dark{
+
+}
+
+.app_sidebar{
+  flex: 1;
+}
+.app_body{
+  flex: 11;
+}
